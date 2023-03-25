@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Viewport meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <!-- Title of the page -->
+  <title>To Do List</title>
+</head>
+
+<body>
+  <!-- Header section with input for new tasks -->
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Add your next task!">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  
+  <!-- Container for displaying messages/alerts to the user -->
+  <div id="message-container"></div>
+  
+  <!-- Unordered list to display the tasks -->
+  <ul id="myUL">
+    <li class="checked">Wake up at 5:00 a.m.</li>
+    <li class="checked">Attend lecture</li>
+    <li>Research on topics for assignments.</li>
+    <li>Complete the assignments which are due early. </li>
+    <li>Exercise</li>
+    <li>Sleep for atleast 7 hours.</li>
+    <li>Buy Grocery</li>
+    <li>Eat healthy food only.</li>
+  </ul>
+  
+  <!-- Audio element for playing a sound when a task is added -->
+  <audio id="ding-sound" src="sound/dingSound.mp3" autoplay="false"></audio>
+  
+  <!-- Link to external JavaScript file -->
+  <script src="js/script.js"></script>
+  
+  <!-- Footer section with group member names and IDs -->
+  <footer>
+    <p>Harsh Patel | 200499996</p>
+    <p>Sana Sharma | 200507105</p>
+    <p>Jaimin Patel | 200502826</p>
+    <p>Nisarg Patel | 200507928</p>
+  </footer>
+</html>
